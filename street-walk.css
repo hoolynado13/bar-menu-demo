@@ -1,0 +1,29 @@
+.street-walk{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:5/2;border:1px solid #646057;border-radius:16px;background:#354350 url(demo-street.svg?v=2) center/100% 100% no-repeat}
+.street-door{position:absolute;overflow:hidden;left:76.7%;top:45.3%;width:5.6%;height:24.3%;background:linear-gradient(115deg,#493728,#261f1b);pointer-events:none}
+.street-door::after{content:"";position:absolute;inset:0;transform-origin:left center;background:linear-gradient(#474d44,#474d44) 82% 60% / 5% 12% no-repeat,linear-gradient(transparent 69%,#53564a 69% 73%,transparent 73%),linear-gradient(125deg,#ffe0a4,#be8a54);backface-visibility:hidden}
+.street-guest{position:absolute;left:79.4%;top:69.6%;opacity:0;width:7.5%;aspect-ratio:58/76;transform:translate(-50%,-100%);transform-origin:center bottom;pointer-events:none}
+.street-guest::before{content:"";position:absolute;bottom:-1%;left:10%;width:80%;height:9%;border-radius:50%;background:#24232955}
+.street-guest::after{content:"";position:absolute;inset:0;background:url(demo-walker.svg) center/contain no-repeat;transform-origin:50% 96%}
+.street-walk::before{content:"";position:absolute;z-index:1;inset:0;background:#11151b;opacity:.65;pointer-events:none}
+.street-walk::after{content:"";position:absolute;left:57.7%;top:28.7%;width:32.5%;height:10.9%;border-radius:4px;background:#ffbd401a;box-shadow:0 0 13px #ffc35066;pointer-events:none}
+.street-walk .map-link{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;max-width:95%;min-height:44px;box-shadow:0 3px 14px #17181670}
+@media(max-width:580px){.street-walk{aspect-ratio:1.85}.street-guest{width:8.8%}.street-walk .map-link{padding:8px 13px;font-size:.88rem}}
+@media(prefers-reduced-motion:no-preference){
+  .street-walk.walking .street-door::after{animation:street-door-swing 5.8s linear both}
+  .street-walk.walking .street-guest{animation:walk-to-demo 5.8s linear both}
+  .street-walk.walking .street-guest::after{animation:walk-step .32s ease-in-out 16 alternate}
+  .street-walk::before{transition:opacity .55s ease}
+  .street-walk.walk-enhanced:not(.arrived)::before{opacity:0}
+  .street-walk.walk-enhanced:not(.arrived) .map-link{visibility:hidden;opacity:0}
+  .street-walk.arrived .map-link{animation:street-map-reveal .32s ease-out .5s backwards}
+  @keyframes street-map-reveal{from{opacity:0;visibility:hidden;transform:translate(-50%,calc(-50% + 6px))}to{opacity:1;visibility:visible;transform:translate(-50%,-50%)}}
+  @keyframes street-door-swing{0%,66%,100%{transform:perspective(140px) rotateY(0)}77%,90%{transform:perspective(140px) rotateY(80deg)}}
+  @keyframes walk-to-demo{
+    0%{left:11.8%;top:78.4%;opacity:1;transform:translate(-50%,-100%) scale(1)}
+    62%{left:68%;top:78.4%}
+    77%{left:78.3%;top:72%;opacity:1;transform:translate(-50%,-100%) scale(.91)}
+    85%{left:79.6%;top:69.8%;opacity:.95;transform:translate(-50%,-100%) scale(.70)}
+    91%,100%{left:80%;top:67.5%;opacity:0;transform:translate(-50%,-100%) scale(.55)}
+  }
+  @keyframes walk-step{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-5%) rotate(2deg)}}
+}

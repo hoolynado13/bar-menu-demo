@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="sky" x2=".8" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#263646"/><stop offset="1" stop-color="#886d63"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#ffe1a2"/><stop offset="1" stop-color="#c48747"/></linearGradient>
+ <pattern id="windows" width="28" height="32" patternUnits="userSpaceOnUse"><rect x="6" y="7" width="10" height="16" rx="1" fill="#576366"/><path d="M11 7v16" stroke="#39464a"/></pattern>
+ <pattern id="brick" width="38" height="20" patternUnits="userSpaceOnUse"><path d="M0 0h38M0 10h38M19 0v10M5 10v10" fill="none" stroke="#665853" stroke-width="1.2"/></pattern>
+ <g id="tree"><path d="M0 0v-49m0 22-10-13m10 5 10-14" stroke="#544941" stroke-width="5" fill="none"/><path d="M-17-36c-16-4-16-23-5-30-2-17 17-25 27-14 13-7 25 6 21 18 12 10 4 26-9 28-8 5-17 3-22-2" fill="#485e50"/><circle cx="-9" cy="-63" r="10" fill="#59725d"/></g>
+ <g id="lamp"><path d="M0 0v-93q0-10 10-10h6" fill="none" stroke="#293536" stroke-width="5"/><path d="m8-101-5 7h22l-5-7" fill="#424544"/><ellipse cx="14" cy="-94" rx="9" ry="2" fill="#ffdd8e"/><path d="M5-92-12-19h62L23-92" fill="#ffe8ac" opacity=".055"/></g>
+</defs>
+<path fill="url(#sky)" d="M0 0h800v320H0z"/>
+<circle cx="393" cy="40" r="13" fill="#f9deb2"/><g fill="#ded5b3" opacity=".75"><circle cx="75" cy="28" r="1.5"/><circle cx="219" cy="21" r="1"/><circle cx="344" cy="44" r="1.5"/><circle cx="458" cy="23" r="1"/></g>
+<g fill="#36414c"><path d="M0 77h51V58h53v30h40V51h68v24h60v-9h60v24h73V62h66v29h35v81H0z"/></g>
+<path d="M0 105h108V81h98v18h70v-8h79v27h96v90H0z" fill="#414e54"/><path d="M0 105h108V81h98v18h70v-8h79v27h96v90H0z" fill="url(#windows)"/>
+<g fill="#c9a66f"><path d="M34 135h10v15H34zm111-33h10v16h-10zm30 32h10v16h-10zm112-32h10v16h-10zm28 32h10v16h-10z"/></g>
+<path d="M0 196q85-26 159-9t134 0q87-20 166 3v34H0" fill="#394e46"/>
+<path d="M0 211h800v109H0z" fill="#a39682"/><path d="M0 214h800v7H0z" fill="#6e7267"/>
+<path d="M0 273h800v47H0z" fill="#4b4e50"/><path d="M0 270h800v5H0z" fill="#cec0a5"/>
+<g stroke="#8d8374" fill="none"><path d="M0 243h800M60 221l-22 49m147-49-13 49m134-49-7 49m128-49 5 49m122-49 12 49m107-49 21 49"/></g>
+<path d="M0 302h800" stroke="#c7b695" stroke-width="3" stroke-dasharray="43 35" opacity=".48"/>
+<use href="#tree" x="39" y="215"/><use href="#lamp" x="97" y="216"/><use href="#tree" x="326" y="217"/>
+<g stroke="#384742" stroke-width="5"><path d="M164 205v14m48-14v14"/><path d="M158 204h61m-58-9h55" stroke="#866e50"/></g>
+<path d="m448 80 24-16h248l46 20v135l-30 8H448z" fill="#514e4c"/><path d="M448 82h288v145H448z" fill="#887970"/><path d="M448 82h288v145H448z" fill="url(#brick)"/>
+<path d="M440 78h304v10H440z" fill="#353e3d"/><rect x="461" y="92" width="262" height="35" rx="3" fill="#303332"/>
+<text x="592" y="117" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="900" letter-spacing="3" fill="#ffd051">МАГАЗИН БАР</text>
+<g stroke="#343e3c" stroke-width="5" fill="url(#glass)"><path d="M466 142h130v65H466z"/><path d="M611 139h50v86h-50z"/><path d="M677 144h39v63h-39z"/></g>
+<path d="M472 191h117m-117-18h117" stroke="#9c7348" stroke-width="3"/><g fill="#986642"><path d="M483 188v-10h5v10zm10 0v-11h5v11zm14 0v-8h6v8zm45 0v-10h5v10zm10 0v-10h5v10z"/></g>
+<path d="M533 143v64m82-8h42" stroke="#4f554b" stroke-width="3"/><path d="M649 183v10" stroke="#413a2e" stroke-width="3" stroke-linecap="round"/>
+<path d="m457 128-6 12h275l-6-12z" fill="#d3a149"/><path d="M451 140h275v5H451z" fill="#735637"/>
+<path d="M606 226h60l6 5h-72z" fill="#655e54"/><use href="#lamp" x="760" y="224"/>
+<path d="M95 251h468q24 0 41-10l20-10" fill="none" stroke="#ffe6a0" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 8"/>
+</svg>
